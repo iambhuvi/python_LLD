@@ -1,0 +1,10 @@
+from models.pieces_type import PieceType
+from models.playing_piece import PlayingPiece
+import zope.interface 
+
+# @zope.interface.implementer(PlayingPiece)
+class PieceO(PlayingPiece):
+    def __init__(self) -> None:
+        self.type: PieceType = PieceType.O
+        # super().__init__(PieceType.O)
+        # pass
